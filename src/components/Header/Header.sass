@@ -1,0 +1,235 @@
+@import '../../view_styles/variables'
+
+
+
+header
+	width: 100%
+	min-width: 400px
+	align-self: flex-end
+	height: $header-height
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding: 0 20px
+	// background-color: rgba(0,0,0,0.2)
+	&.hidden
+		height: $header-height
+		width: 100%
+	.header__logo
+		width: 40%
+
+	.header__inner
+		width: 60%
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		height: 100%
+	a
+		margin-right: 20px
+	a:last-child
+		margin-right: 0
+	a
+		.button
+			font:
+				size: 16px
+				weight: 700
+			color: $beige
+			background-color: transparent
+			text-transform: uppercase
+			border: 2px solid $beige
+			border-radius: 50%
+			transform-origin: center center
+			transform: translatex(10000px)
+			flex: 0 0 0
+			width: $header-height - 20px
+			height: $header-height - 20px
+			transition: all .13s ease-in-out
+			&--1
+				animation: enter 1s linear .3s forwards
+			&--2
+				animation: enter 1s linear .4s forwards
+			&--3
+				animation: enter 1s linear .5s forwards
+			&--4
+				animation: enter 1s linear .6s forwards
+			&:hover
+				background-color: $beige
+				box-shadow: 0 5px 13px 3px rgba(0,0,0,0.6)
+			&:active
+				transform: scale(0.98)
+				background-color: $beige
+				box-shadow: 0 2px 2px 1px rgba(0,0,0,0.6)
+
+.home-page-wrapper
+	header
+		.button:hover
+			color: $green
+.projects-page-wrapper
+	header
+		.button:hover
+			color: $red
+.about-page-wrapper
+	header
+		.button:hover
+			color: $orange
+.contact-page-wrapper
+	header
+		.button:hover
+			color: $purple
+.menu-toggle
+	display: none
+//animations setup
+header.enter
+	a
+		.button
+			&--1
+				animation: enter 1s linear .2s forwards
+			&--2
+				animation: enter 1s linear .3s forwards
+			&--3
+				animation: enter 1s linear .4s forwards
+			&--4
+				animation: enter 1s linear .5s forwards
+header.pop
+	a
+		.button
+			&--1
+				animation: pop .5s linear .2s forwards
+			&--2
+				animation: pop .5s linear .3s forwards
+			&--3
+				animation: pop .5s linear .4s forwards
+			&--4
+				animation: pop .5s linear .5s forwards
+header.fall-down
+	a
+		.button
+			&--1
+				animation: fall-down .7s linear .2s forwards
+			&--2
+				animation: fall-down .7s linear .3s forwards
+			&--3
+				animation: fall-down .7s linear .4s forwards
+			&--4
+				animation: fall-down .7s linear .5s forwards
+header.swirl
+	a
+		.button
+			&--1
+				animation: swirl .7s linear .2s forwards
+			&--2
+				animation: swirl .7s linear .3s forwards
+			&--3
+				animation: swirl .7s linear .4s forwards
+			&--4
+				animation: swirl .7s linear .5s forwards
+
+@media screen and (max-width: 720px)
+	header
+		width: 100%
+@media screen and (max-width: 540px)
+	header.hidden
+		height:	0.1px !important
+		width: 0.1px !important
+		.header__inner
+			flex-direction: column
+			height:	0.1px !important
+			width: 0.1px !important
+	header
+		animation: mount .3s linear forwards
+		width: 100%
+		flex-direction: column
+		height: 100%
+		flex: 1 1
+		padding: 0
+		z-index: 2
+
+		.header__logo
+			display: none
+		.header__inner
+			padding-top: $menu-toggle-size
+			flex-direction: column
+			height:	calc(100% - $menu-toggle-size)
+			width: 100%
+			overflow: hidden
+			a
+				height: 25%
+				width: 100%
+				margin-right: 0
+				.button
+					border-radius: 0
+					height: 100%
+					font-size: 14px
+					width: 100%
+					&:hover
+						background-color: transparent
+						box-shadow: none
+					&:active
+						background-color: $beige
+						box-shadow: 0 5px 13px 3px rgba(0,0,0,0.6)
+	.menu-toggle
+		animation: pop .4s linear .5s forwards
+		transform: scale(0.1)
+		opacity: 0
+		border-bottom: 1px solid $beige
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 0 17px 0 20px
+		height: 50px
+		width: 100%
+		position: fixed
+		right: 0
+		top: 0
+		z-index: 3
+		transition: all .2s ease-in
+		text-transform: uppercase
+		letter-spacing: 2px
+		font:
+			size: 20px
+		&:hover
+			cursor: pointer
+	.home-page-wrapper
+		.menu-toggle
+			background-color: $green
+		header
+			.button:hover
+				color: $beige
+			.button:active
+				color: $green
+	.projects-page-wrapper
+		.menu-toggle
+			background-color: $red
+		header
+			.button:hover
+				color: $beige
+			.button:active
+				color: $red
+				
+	.about-page-wrapper
+		.menu-toggle
+			background-color: $orange
+		header
+			.button:hover
+				color: $beige
+			.button:active
+				color: $orange
+	.contact-page-wrapper
+		.menu-toggle
+			background-color: $purple
+		header
+			.button:hover
+				color: $beige
+			.button:active
+				color: $purple
+	.menu-toggle.active
+		background-color: $beige
+
+	header.enter,
+	header.pop,
+	header.swirl,
+	header.fall-down
+		a
+			.button
+				animation: none
+				transform: translateX(0)
