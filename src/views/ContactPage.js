@@ -45,7 +45,7 @@ class ContactPage extends React.Component {
 		return (
 
 			<div className="contact-page-wrapper page-wrapper">
-				<Header animationClass={"swirl"}/>
+				<Header animationClass={"swirl"} activeSection={"contact"}/>
 			</div>
 
 		)

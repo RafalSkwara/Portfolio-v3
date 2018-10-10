@@ -45,7 +45,7 @@ class ProjectsPage extends React.Component {
 		return (
 
 			<div className="projects-page-wrapper page-wrapper">
-				<Header animationClass={"pop"} />
+				<Header animationClass={"pop"} activeSection={"projects"}/>
 			</div>
 
 		)

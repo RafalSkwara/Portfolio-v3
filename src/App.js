@@ -26,7 +26,7 @@ class App extends React.Component {
     render() {
 		const timeout = 4000;
 		return (
-			<Router basename={"/"} > 
+			<Router basename={"/new-portfolio"} > 
 			{/* change the string in basename to "/" for development */}
 				<div className="main-wrapper" style={{
 					// backgroundImage: `url(${bg})`,

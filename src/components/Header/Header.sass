@@ -36,14 +36,16 @@ header
 			color: $beige
 			background-color: transparent
 			text-transform: uppercase
-			border: 2px solid $beige
-			border-radius: 50%
+			border-radius: 5px
 			transform-origin: center center
 			transform: translatex(10000px)
 			flex: 0 0 0
-			width: $header-height - 20px
-			height: $header-height - 20px
+			padding: 10px 20px
 			transition: all .13s ease-in-out
+			&.highlight
+				background-color: $light-grey
+				&:hover
+					box-shadow: 0 5px 13px 3px rgba(0,0,0,0.6)
 			&--1
 				animation: enter 1s linear .3s forwards
 			&--2
@@ -141,25 +143,27 @@ header.swirl
 		flex-direction: column
 		height: 100%
 		flex: 1 1
-		padding: 0
+		padding: $menu-toggle-size 0 0 0
 		z-index: 2
 
 		.header__logo
 			display: none
 		.header__inner
-			padding-top: $menu-toggle-size
+			padding-top: 0
 			flex-direction: column
-			height:	calc(100% - $menu-toggle-size)
+			height:	calc(100vh - 80px)
 			width: 100%
 			overflow: hidden
+			position: fixed
 			a
 				height: 25%
 				width: 100%
 				margin-right: 0
 				.button
 					border-radius: 0
+					border-bottom: 2px solid $beige
 					height: 100%
-					font-size: 14px
+					font-size: 24px
 					width: 100%
 					&:hover
 						background-color: transparent
@@ -176,7 +180,7 @@ header.swirl
 		align-items: center
 		justify-content: space-between
 		padding: 0 17px 0 20px
-		height: 50px
+		height: $menu-toggle-size
 		width: 100%
 		position: fixed
 		right: 0

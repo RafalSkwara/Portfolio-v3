@@ -44,7 +44,10 @@ class HomePage extends React.Component {
 	render() {
 		return (
 			<div className="home-page-wrapper page-wrapper">
-				<Header animationClass={"enter"} />
+				<Header animationClass={"enter"} activeSection={"home"}/>
+				<section className="content">
+					<h1>Well, Hello</h1>
+				</section>
 			</div>
 		)
 	}

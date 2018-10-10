@@ -52,22 +52,22 @@ class Header extends React.Component {
 				<div className="header__logo"></div>
 				<div className="header__inner">
 					<NavLink to="/">
-						<button type="button" className="button button--1">
+						<button type="button" className={`button button--1 ${this.props.activeSection ==="home" ? "highlight" : ""}`}>
 							Home
 						</button>
 					</NavLink>
 					<NavLink to="/projects">
-						<button type="button" className="button button--2">
+							<button type="button" className={`button button--2 ${this.props.activeSection === "projects" ? "highlight" : ""}`}>
 							Projects
 						</button>
 					</NavLink>
 					<NavLink to="/about">
-						<button type="button" className="button button--3">
+							<button type="button" className={`button button--3 ${this.props.activeSection === "about" ? "highlight" : ""}`}>
 							About
 						</button>
 					</NavLink>
 					<NavLink to="/contact">
-						<button type="button" className="button button--4">
+							<button type="button" className={`button button--4 ${this.props.activeSection === "contact" ? "highlight" : ""}`}>
 							Contact
 						</button>
 					</NavLink>

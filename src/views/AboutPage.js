@@ -44,7 +44,7 @@ class AboutPage extends React.Component {
 		return (
 
 			<div className="about-page-wrapper page-wrapper">
-				<Header animationClass={"fall-down"}/>
+				<Header animationClass={"fall-down"} activeSection={"about"}/>
 			</div>
 
 		)
