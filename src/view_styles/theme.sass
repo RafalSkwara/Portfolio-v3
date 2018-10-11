@@ -22,6 +22,7 @@ body #root .main-wrapper
 		size: cover
 		repeat: no-repeat
 		position: center
+	padding: 0 17px 0 0
 
 *, button
 	font-family: 'Raleway', Helvetica, Arial, Helvetica, sans-serif
@@ -54,13 +55,67 @@ button
 	&:hover
 		cursor: pointer
 
-.page-wrapper
+.page-wrapper,
+.bg-wrapper
 	width: 100vw
 	max-width: 100%
+	min-height: 100vh
+	
+.page-wrapper:after
+	content: ""
+	opacity: 0.1
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	position: absolute
+	z-index: -1
+	animation: fade-in 2s linear .5s forwards
+	background:
+		size: cover
+		position: center
+		repeat: no-repeat
+.home-page-wrapper:after
+	background-image: url("../assets/img/1.svg")
+.projects-page-wrapper:after
+	background-image: url("../assets/img/2.svg")
+.about-page-wrapper:after
+	background-image: url("../assets/img/3.svg")
+.contact-page-wrapper:after
+	background-image: url("../assets/img/4.svg")
+
+
+.lang-toggle
+	position: fixed
+	bottom: 10px
+	right: 10px
+	height: 54px
+	width: 54px
+	background-color: rgba(255,255,255,.8)
+	user-select: none
+	text-transform: uppercase
+	border-radius: 50%
+	border: 2px solid transparent
+	transition: all .12s ease-in
+	&:hover
+		cursor: pointer
+		background-color: rgba(255,255,255,.9)
+		border: 2px solid #fff
+
+	.flag
+		border-radius: 50%
+		margin: 2.5px
+		width: 45px
+		height: 45px
+		background:
+			size: cover
+			position: center
 
 
 section.content
 	height: 100%
+	display: flex
+	flex-direction: column
 
 a
 	text-decoration: none
@@ -82,6 +137,10 @@ a
 	align-items: center
 
 
-
+@media screen and (max-width: 540px)
+	body #root .main-wrapper
+		padding: 0
+	section.content
+		padding-top: 80px
 
 

@@ -10,5 +10,34 @@
 	flex-direction: column
 
 	section.content
-		h1 
+		justify-content: space-between
+		padding-bottom: 10vh
+		h1
+			opacity: 0
+			animation: fade-in .3s linear .4s forwards 
 			padding: 20px 0
+		h2, h3
+			opacity: 0
+			animation: fade-in .3s linear .6s forwards 
+	.start-button
+		opacity: 0
+		animation: fade-in .3s linear 1s forwards 
+		padding: 10px 25px
+		font-size: 1.4rem
+		text-transform: uppercase
+		color: $beige
+		border-radius: 5px
+		border: 1px solid $beige
+		margin: 0 auto
+		text-align: center
+		flex-grow: 0
+		min-width: 180px
+		transition: all .12s ease-in
+		&:hover
+			cursor: pointer
+			background-color: rgba(0,0,0,0.3)
+			transform: scale(1.2)
+			box-shadow: 0 4px 15px 3px rgba(0,0,0,0.4)
+		&:active
+			transform: scale(1.1)
+			box-shadow: none

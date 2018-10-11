@@ -16,10 +16,14 @@ header
 		height: $header-height
 		width: 100%
 	.header__logo
-		width: 40%
-
+		height: 100%
+		width: 140px
+		display: flex
+		padding-left: 20px
+		img
+			max-height: 100%
 	.header__inner
-		width: 60%
+		width: 100%
 		display: flex
 		justify-content: flex-end
 		align-items: center
@@ -129,10 +133,26 @@ header.swirl
 @media screen and (max-width: 720px)
 	header
 		width: 100%
+		.header__logo
+			padding: 0
+			display: flex
+			align-items: center
+			width: 90px
+			img
+				max-width: 80px
+		.header__inner
+			width: 100%
+		a
+			.button
+				padding: 5px 5px
+				font-size: 15px
 @media screen and (max-width: 540px)
+	.contact-page-wrapper
+		header
+			.header__inner
+				margin-top: -90px
 	header.hidden
-		height:	0.1px !important
-		width: 0.1px !important
+		display: none
 		.header__inner
 			flex-direction: column
 			height:	0.1px !important
@@ -145,18 +165,18 @@ header.swirl
 		flex: 1 1
 		padding: $menu-toggle-size 0 0 0
 		z-index: 2
-
+		min-width: 300px
 		.header__logo
 			display: none
 		.header__inner
 			padding-top: 0
 			flex-direction: column
-			height:	calc(100vh - 80px)
+			min-height:	calc(100vh - 80px)
 			width: 100%
 			overflow: hidden
-			position: fixed
 			a
 				height: 25%
+				min-height: 60px
 				width: 100%
 				margin-right: 0
 				.button
@@ -172,7 +192,7 @@ header.swirl
 						background-color: $beige
 						box-shadow: 0 5px 13px 3px rgba(0,0,0,0.6)
 	.menu-toggle
-		animation: pop .4s linear .5s forwards
+		animation: pop .3s linear .3s forwards
 		transform: scale(0.1)
 		opacity: 0
 		border-bottom: 1px solid $beige
@@ -193,39 +213,62 @@ header.swirl
 			size: 20px
 		&:hover
 			cursor: pointer
+		
 	.home-page-wrapper
 		.menu-toggle
 			background-color: $green
 		header
-			.button:hover
-				color: $beige
-			.button:active
-				color: $green
+			.header__inner
+				a
+					.button
+						background-color: $green
+						&.highlight
+							background-color: $light-grey
+					.button:hover
+						color: $beige
+					.button:active
+						color: $green
+						background-color: $beige
 	.projects-page-wrapper
 		.menu-toggle
 			background-color: $red
 		header
-			.button:hover
-				color: $beige
-			.button:active
-				color: $red
+			.header__inner
+				a
+					.button
+						background-color: $red
+					.button:hover
+						color: $beige
+					.button:active
+						color: $red
+						background-color: $beige
 				
 	.about-page-wrapper
 		.menu-toggle
 			background-color: $orange
 		header
-			.button:hover
-				color: $beige
-			.button:active
-				color: $orange
+			.header__inner
+				a
+					.button
+						background-color: $orange
+					.button:hover
+						color: $beige
+					.button:active
+						color: $orange
+						background-color: $beige
 	.contact-page-wrapper
 		.menu-toggle
 			background-color: $purple
 		header
-			.button:hover
-				color: $beige
-			.button:active
-				color: $purple
+			.header__inner
+				a
+					.button
+						background-color: $purple
+					.button:hover
+						color: $beige
+					.button:active
+						color: $purple
+						background-color: $beige
 	.menu-toggle.active
 		background-color: $beige
 
@@ -237,3 +280,5 @@ header.swirl
 			.button
 				animation: none
 				transform: translateX(0)
+	.rule
+		display: none

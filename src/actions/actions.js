@@ -8,3 +8,8 @@ export function hideMenu() {
 		type: "HIDE_MENU"
 	};
 }
+export function toggleLanguage() {
+	return {
+		type: "TOGGLE_LANGUAGE"
+	};
+}

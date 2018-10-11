@@ -3,11 +3,15 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { withRouter, NavLink } from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import "../view_styles/ProjectsPage.sass";
+import Icon from 'react-icons-kit'
+import { androidLaptop, socialLinkedin, iosEmail, iphone } from 'react-icons-kit/ionicons'
 import Header from '../components/Header/Header'
 import { hideMenu, toggleMenu } from '../actions/actions'
+import "../view_styles/ProjectsPage.sass";
+
 const mapStateToProps = state => ({
-	menuHidden: state.firstReducer.menuHidden
+	menuHidden: state.firstReducer.menuHidden,
+	lang: state.firstReducer.lang
 });
 
 const mapDispatchToProps = (dispatch) => {
@@ -42,10 +46,112 @@ class ProjectsPage extends React.Component {
 	}
 	
 	render() {
+		const skydelveImg = require("../assets/img/skydelve.png")
 		return (
 
 			<div className="projects-page-wrapper page-wrapper">
 				<Header animationClass={"pop"} activeSection={"projects"}/>
+				<h3>
+					{
+						this.props.lang === "en"
+							? "Here you can see some of my projects"
+							: "Oto kilka moich ostatnich projektów"
+					}
+				</h3>
+				<section className="content">
+					<div className="item">
+						<div className="item__image" style={{backgroundImage: `url(${skydelveImg})`}}>
+
+						</div>
+						<div className="item__content">
+							<h3 className="item__title">SkyDelve</h3>
+							<div className="item__text">
+								"React, Redux, RESTful API" 
+							</div>
+							<div className="icon-wrapper">
+								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo" />
+							</div>
+						</div>
+					</div>
+					<div className="item">
+						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
+
+						</div>
+						<div className="item__content">
+							<h3 className="item__title">Media Market</h3>
+							<div className="item__text">
+									"React, Redux, SASS"
+							</div>
+
+							<div className="icon-wrapper">
+								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
+							</div>
+						</div>
+					</div>
+					<div className="item">
+						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
+
+						</div>
+						<div className="item__content">
+							<h3 className="item__title">SpaceX Launch List</h3>
+							<div className="item__text">
+									"React, Redux, RESTful API
+							</div>
+							<div className="icon-wrapper">
+
+								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
+							</div>
+						</div>
+					</div>
+					<div className="item">
+						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
+
+						</div>
+						<div className="item__content">
+							<h3 className="item__title">Duel - the game</h3>
+							<div className="item__text">
+								HTML5, CSS3, JS (ES6)
+							</div>
+							<div className="icon-wrapper">
+
+								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
+							</div>
+						</div>
+					</div>
+					<div className="item">
+						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
+
+						</div>
+						<div className="item__content">
+							<h3 className="item__title">Sarbat - static page</h3>
+							<div className="item__text">
+								HTML5, CSS3, JS (ES6)
+							</div>
+							<div className="icon-wrapper">
+
+								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
+							</div>
+						</div>
+						
+					</div>
+					<div className="item">
+						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
+
+						</div>
+						<div className="item__content">
+							<h3 className="item__title">Weather widget</h3>
+							<div className="item__text">
+								JS, jQuery, RESTful API
+							</div>
+							<div className="icon-wrapper">
+
+								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
+							</div>
+						</div>
+					</div>
+					
+
+				</section>
 			</div>
 
 		)
