@@ -60,11 +60,11 @@ class ProjectsPage extends React.Component {
 
 			<div className="projects-page-wrapper page-wrapper">
 				<Header animationClass={"pop"} activeSection={"projects"}/>
-				{this.props.activeProject === "" && <h3 classname="section__title">
+				{this.props.activeProject === "" && <h3 className="section__title">
 					{
 						this.props.lang === "en"
-							? "Here you can see some of my projects"
-							: "Oto kilka moich ostatnich projektów"
+							? "Here's an example of my work"
+							: "Oto kilka z moich projektów"
 					}
 				</h3>}
 				<section className="content">		

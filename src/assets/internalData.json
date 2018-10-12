@@ -3,7 +3,7 @@
 		{
 			"name": "Skydelve",
 			"image": "skydelve.png",
-			"images": ["skydelve.png", "skydelve.png", "skydelve.png"],
+			"images": ["skydelve.png", "skydelve.png"],
 			"tech": "React, Redux, RESTful API",
 			"link": "https://rafalskwara.github.io/skydelve/",
 			"desc": {
@@ -24,6 +24,10 @@
 		{
 			"name": "Media Market",
 			"image": "storefront.png",
+			"images": [
+				"storefront.png",
+				"storefront.png"
+			],
 			"tech": "React, Redux, SASS",
 			"link": "https://rafalskwara.github.io/storefront/",
 			"desc": {
@@ -44,6 +48,10 @@
 		{
 			"name": "SpaceX Launch List",
 			"image": "spacex.png",
+			"images": [
+				"spacex.png",
+				"spacex.png"
+			],
 			"tech": "React, Redux, RESTful API",
 			"link": "https://rafalskwara.github.io/spacex/",
 			"desc": {
@@ -64,6 +72,10 @@
 		{
 			"name": "Duel - the game",
 			"image": "duel.png",
+			"images": [
+				"duel.png",
+				"duel.png"
+			],
 			"tech": "HTML5, CSS3, JS (ES6)",
 			"link": "https://codepen.io/rafalskwara/full/aVBJxz/",
 			"desc": {
@@ -84,6 +96,10 @@
 		{
 			"name": "Sarbat - static page",
 			"image": "sarbat.png",
+			"images": [
+				"sarbat.png",
+				"sarbat.png"
+			],
 			"tech": "HTML5, CSS3, JS (ES6)",
 			"link": "https://rafalskwara.github.io/sarbat/",
 			"desc": {
@@ -104,6 +120,10 @@
 		{
 			"name": "Weather widget",
 			"image": "weather.png",
+			"images": [
+				"weather.png",
+				"weather.png"
+			],
 			"tech": "JS, jQuery, RESTful API",
 			"link": "https://codepen.io/rafalskwara/full/RKzWZG/",
 			"desc": {

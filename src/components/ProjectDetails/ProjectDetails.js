@@ -54,6 +54,7 @@ class ProjectDetails extends React.Component {
 				? "" 
 				: this.props.activeProject === projectData.name ? "active" : "hidden";
 		let description = projectData.desc[this.props.lang];
+		let images = projectData.images;
 		let live = this.props.lang === "en" ? "See Live" : "Zobacz";
 		let eng = this.props.lang === "en";
 
@@ -72,13 +73,14 @@ class ProjectDetails extends React.Component {
 						</div>)}
 				</div>
 				<div className="item-details__content">
-						<div className="column column-images"></div>
+						<div className="column column-images">						
+							{images.map((image, i) => <img key={i} src={require(`../../assets/img/${image}`)}/>)}	
+						</div>
 						<div className="column column-description">
-
 							<h4>{eng ? "Main technologies used" : "Główne technologie"}</h4>
 							<p className="tech">{projectData.tech}</p>
 							<h4>{eng ? "Detailed description" : "Szczegóły"}</h4>
-							{description.map((par, i) => <p key="i">{par}</p>)}
+							{description.map((par, i) => <p key={i}>{par}</p>)}
 						</div>
 				</div>
 				<a href={projectData.link} target="_blank" className="icon-wrapper">

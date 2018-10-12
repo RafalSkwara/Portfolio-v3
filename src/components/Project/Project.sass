@@ -73,11 +73,12 @@
 			align-items: center
 			border: 1px solid $beige
 			justify-content: space-around
+			transition: all .15s ease-in
 			p
 				margin-left: 10px
 				color: $beige
 			&:hover
-				background-color: #fff
+				background-color: $beige
 				svg
 					fill: $red
 				p
@@ -115,6 +116,8 @@
 				.item__title
 					width: 35%
 					text-align: left
+					font-size: 15px
+					line-height: 1.1rem
 				&__text
 					font-size: 14px
 					text-align: right
@@ -124,10 +127,11 @@
 				&__content
 					flex-direction: row
 				svg
-					height: 40px
+					height: 25px
 				.icon-wrapper
 					padding: 2px 5px
 					width: auto
 					p
 						margin-left: 6px
 						color: $beige
+						font-size: 14px

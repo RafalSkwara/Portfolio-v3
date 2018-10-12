@@ -65,9 +65,14 @@
 				flex-direction: column
 				height: 100%
 				&-images
-					width: 30%
+					width: 40%
+					img
+						max-width: 100%
+						object-fit: contain
+						height: 200px
+						margin: 5px
 				&-description
-					width: 70%
+					width: 60%
 					align-items: flex-start
 					padding: 0 20px
 					h4 
@@ -97,11 +102,12 @@
 			display: flex
 			align-items: center
 			border: 1px solid $beige
+			transition: all .15s ease-in-out
 			p 
 				color: $beige
 				margin-left: 20px
 			&:hover
-				background-color: #fff
+				background-color: $beige
 				cursor: pointer
 				p 
 					color: $red
@@ -129,26 +135,43 @@
 			margin: 0
 			min-height: calc(100vh - 140px)
 			justify-content: flex-start
-			align-content: unset
+			align-content: unset !important
 			.item-details
-				align-items: flex-start
 				min-height: calc(100vh - 80px)
 				width: 100%
 				height: 100%
 				padding: 0
 				margin: 0
-			.item__title
-				font-size: 16px
-				line-height: 1.4rem
+				&__title
+					font-size: 22px
+					padding: 0
+					line-height: 1.4rem
 			.item__text
 				font-size: 15px
-			.item__content
+			.item-details__content
+				flex-direction: column
 				.icon-wrapper
 					justify-content: center
+					flex-wrap: wrap
 					p
 						width: auto
 					svg
 						height: 30px
 						width: 30px
-					
+				.column
+					&-images
+						width: 100%
+					&-description
+						width: 100%
+						padding: 0 10px
+						h4 
+							margin: 20px 0
+						p
+							padding: 0 0 0 10px
+							margin-bottom: 10px
+							font-size: 16px
+							line-height: 23px
+							letter-spacing: 1px
+
+				
 
