@@ -1,5 +1,125 @@
 {
-	"services": ["Astronomy Picture of the Day", "EPIC Earth Images", "Neo - Asteorid Feed", "Mars Rover Photos"],
-	"service-urls": ["picture-of-the-day", "epic-earth", "neo", "mars-photos"],
-	"rovers": ["opportunity", "spirit", "curiosity"]
+	"projects": [
+		{
+			"name": "Skydelve",
+			"image": "skydelve.png",
+			"images": ["skydelve.png", "skydelve.png", "skydelve.png"],
+			"tech": "React, Redux, RESTful API",
+			"link": "https://rafalskwara.github.io/skydelve/",
+			"desc": {
+				"en": [
+					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
+					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
+					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+				],
+				"pl": [
+					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
+					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
+					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+				]
+			}
+			
+
+		},
+		{
+			"name": "Media Market",
+			"image": "storefront.png",
+			"tech": "React, Redux, SASS",
+			"link": "https://rafalskwara.github.io/storefront/",
+			"desc": {
+				"en": [
+					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
+					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
+					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+				],
+				"pl": [
+					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
+					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
+					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+				]
+			}
+			
+
+		},
+		{
+			"name": "SpaceX Launch List",
+			"image": "spacex.png",
+			"tech": "React, Redux, RESTful API",
+			"link": "https://rafalskwara.github.io/spacex/",
+			"desc": {
+				"en": [
+					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
+					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
+					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+				],
+				"pl": [
+					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
+					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
+					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+				]
+			}
+			
+
+		},
+		{
+			"name": "Duel - the game",
+			"image": "duel.png",
+			"tech": "HTML5, CSS3, JS (ES6)",
+			"link": "https://codepen.io/rafalskwara/full/aVBJxz/",
+			"desc": {
+				"en": [
+					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
+					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
+					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+				],
+				"pl": [
+					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
+					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
+					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+				]
+			}
+			
+
+		},
+		{
+			"name": "Sarbat - static page",
+			"image": "sarbat.png",
+			"tech": "HTML5, CSS3, JS (ES6)",
+			"link": "https://rafalskwara.github.io/sarbat/",
+			"desc": {
+				"en": [
+					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
+					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
+					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+				],
+				"pl": [
+					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
+					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
+					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+				]
+			}
+			
+
+		},
+		{
+			"name": "Weather widget",
+			"image": "weather.png",
+			"tech": "JS, jQuery, RESTful API",
+			"link": "https://codepen.io/rafalskwara/full/RKzWZG/",
+			"desc": {
+				"en": [
+					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
+					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
+					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+				],
+				"pl": [
+					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
+					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
+					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+				]
+			}
+			
+
+		}
+	]
 }

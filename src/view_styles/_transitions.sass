@@ -168,7 +168,30 @@
 	border-radius: 50%
 	animation: spin 500ms linear infinite
 
+@keyframes enlarge
 
+	0%
+		height: 36%
+		width: 46%
+		opacity: 0
+	60%
+		opacity: 1
+		height: 100%
+		width: 100%
+	76%, 86%
+		opacity: 1
+		transform: scale(.95) rotate(0deg)
+	100%
+		height: 100%
+		width: 100%
+		opacity: 1
+@keyframes fade-out
+
+	0%
+		opacity: 1
+
+	100%
+		opacity: 0
 @keyframes spin
 	0%
 		transform: rotate(0deg)

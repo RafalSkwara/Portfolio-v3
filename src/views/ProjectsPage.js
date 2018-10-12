@@ -6,18 +6,23 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Icon from 'react-icons-kit'
 import { androidLaptop, socialLinkedin, iosEmail, iphone } from 'react-icons-kit/ionicons'
 import Header from '../components/Header/Header'
-import { hideMenu, toggleMenu } from '../actions/actions'
+import Project from '../components/Project/Project'
+import { hideMenu, toggleMenu, clearProjects } from '../actions/actions'
+import data from '../assets/internalData.json'
+
 import "../view_styles/ProjectsPage.sass";
 
 const mapStateToProps = state => ({
 	menuHidden: state.firstReducer.menuHidden,
-	lang: state.firstReducer.lang
+	lang: state.firstReducer.lang,
+	activeProject: state.firstReducer.activeProject
 });
 
 const mapDispatchToProps = (dispatch) => {
 	return bindActionCreators({
 		hideMenu: hideMenu,
-		toggleMenu: toggleMenu
+		toggleMenu: toggleMenu,
+		clearProjects: clearProjects
 	}, dispatch)
 }
 
@@ -30,6 +35,7 @@ class ProjectsPage extends React.Component {
 				animation: "mount .3s cubic-bezier(.83,.21,1,1) forwards"
 			}
 		}
+		
 	}
 
 	componentWillMount() {
@@ -42,115 +48,34 @@ class ProjectsPage extends React.Component {
 	}
 
 	componentDidMount() {
+		this.props.clearProjects()
 		this.props.hideMenu()
 	}
+
+
 	
 	render() {
-		const skydelveImg = require("../assets/img/skydelve.png")
+		let wrap = this.props.activeProject === "" ? "wrap" : "no-wrap";
 		return (
 
 			<div className="projects-page-wrapper page-wrapper">
 				<Header animationClass={"pop"} activeSection={"projects"}/>
-				<h3>
+				{this.props.activeProject === "" && <h3 classname="section__title">
 					{
 						this.props.lang === "en"
 							? "Here you can see some of my projects"
 							: "Oto kilka moich ostatnich projektów"
 					}
-				</h3>
-				<section className="content">
-					<div className="item">
-						<div className="item__image" style={{backgroundImage: `url(${skydelveImg})`}}>
-
-						</div>
-						<div className="item__content">
-							<h3 className="item__title">SkyDelve</h3>
-							<div className="item__text">
-								"React, Redux, RESTful API" 
-							</div>
-							<div className="icon-wrapper">
-								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo" />
-							</div>
-						</div>
-					</div>
-					<div className="item">
-						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
-
-						</div>
-						<div className="item__content">
-							<h3 className="item__title">Media Market</h3>
-							<div className="item__text">
-									"React, Redux, SASS"
-							</div>
-
-							<div className="icon-wrapper">
-								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
-							</div>
-						</div>
-					</div>
-					<div className="item">
-						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
-
-						</div>
-						<div className="item__content">
-							<h3 className="item__title">SpaceX Launch List</h3>
-							<div className="item__text">
-									"React, Redux, RESTful API
-							</div>
-							<div className="icon-wrapper">
-
-								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
-							</div>
-						</div>
-					</div>
-					<div className="item">
-						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
-
-						</div>
-						<div className="item__content">
-							<h3 className="item__title">Duel - the game</h3>
-							<div className="item__text">
-								HTML5, CSS3, JS (ES6)
-							</div>
-							<div className="icon-wrapper">
-
-								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
-							</div>
-						</div>
-					</div>
-					<div className="item">
-						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
-
-						</div>
-						<div className="item__content">
-							<h3 className="item__title">Sarbat - static page</h3>
-							<div className="item__text">
-								HTML5, CSS3, JS (ES6)
-							</div>
-							<div className="icon-wrapper">
-
-								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
-							</div>
-						</div>
-						
-					</div>
-					<div className="item">
-						<div className="item__image" style={{ backgroundImage: `url(${skydelveImg})` }}>
-
-						</div>
-						<div className="item__content">
-							<h3 className="item__title">Weather widget</h3>
-							<div className="item__text">
-								JS, jQuery, RESTful API
-							</div>
-							<div className="icon-wrapper">
-
-								<Icon class="icon" icon={androidLaptop} size={70} title="See Live Demo"/>
-							</div>
-						</div>
-					</div>
+				</h3>}
+				<section className="content">		
+					{
+						data.projects.map((projectData, index) => (
+							<Project 
+								data={projectData} 
+								key={index}
+								/>
 					
-
+					))}	
 				</section>
 			</div>
 

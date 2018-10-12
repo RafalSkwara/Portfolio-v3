@@ -13,3 +13,14 @@ export function toggleLanguage() {
 		type: "TOGGLE_LANGUAGE"
 	};
 }
+export function clearProjects() {
+	return {
+		type: "CLEAR_PROJECTS"
+	};
+}
+export function setActiveProject(str) {
+	return {
+		type: "SET_ACTIVE_PROJECTS",
+		payload: str
+	};
+}
