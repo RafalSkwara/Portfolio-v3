@@ -60,13 +60,22 @@ class ProjectsPage extends React.Component {
 
 			<div className="projects-page-wrapper page-wrapper">
 				<Header animationClass={"pop"} activeSection={"projects"}/>
-				{this.props.activeProject === "" && <h3 className="section__title">
-					{
-						this.props.lang === "en"
-							? "Here's an example of my work"
-							: "Oto kilka z moich projektów"
-					}
-				</h3>}
+				{this.props.activeProject === "" && <React.Fragment>
+					<h3 className="section__title">
+						{
+							this.props.lang === "en"
+								? "Here are some of my projects"
+								: "Oto kilka z moich projektów"
+						}
+					</h3>
+					<p className="section__title__paragraph">
+						{
+							this.props.lang === "en"
+								? "Click/tap to see the details."
+								: "Kliknij, by zobaczyć więcej informacji."
+						}
+					</p>
+				</React.Fragment>}
 				<section className="content">		
 					{
 						data.projects.map((projectData, index) => (

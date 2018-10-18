@@ -151,12 +151,21 @@ header.swirl
 		header
 			.header__inner
 				margin-top: -90px
+
+	.home-page-wrapper
+			header
+				.header__inner					
+					min-height:	calc(100vh - 80px)
 	header.hidden
 		display: none
 		.header__inner
 			flex-direction: column
 			height:	0.1px !important
 			width: 0.1px !important
+
+
+
+
 	header
 		animation: mount .3s linear forwards
 		width: 100%
@@ -171,7 +180,7 @@ header.swirl
 		.header__inner
 			padding-top: 0
 			flex-direction: column
-			min-height:	calc(100vh - 80px)
+			max-height:	calc(100vh - 80px)
 			width: 100%
 			overflow: hidden
 			a

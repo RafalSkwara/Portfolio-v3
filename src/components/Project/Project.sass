@@ -9,9 +9,10 @@
 		height: 36%
 		margin: 5px
 		width: 46%
+		max-width: 46%
 		opacity: 0
 		background-color: rgba(255,255,255,.3)
-		animation: mount .5s linear .2s forwards
+		animation: enlarge .5s linear .2s forwards
 		color: $beige
 		display: flex
 		flex-direction: row
@@ -44,7 +45,9 @@
 		&__content
 			display: flex
 			width: 100%
+			height: 100%
 			flex-direction: column
+			justify-content: space-around
 			align-items: center
 		&-cv
 			flex-direction: row
@@ -52,13 +55,17 @@
 			height: 20%
 			margin: 5px 0
 		h3
-			margin: 10px 0
 			text-align: center
+			line-height: auto
 			width: 100%
 			font-size: 20px
+		&__title
+			margin: 10px 0
+			padding: 0
+			height: auto
 		&__text
-			text-align: right
-			padding: 15px 25px
+			text-align: center
+			margin-bottom: 20px
 			border-radius: 5px
 			font-size: 18px
 			color: $beige
@@ -93,8 +100,12 @@
 @media screen and (max-width: 720px)
 	.projects-page-wrapper
 		h3
+			height: auto
 		section.content
 			.item
+				height: 220px
+				min-height: 220px
+				padding: 20px
 				&__text
 					font-size: 16px
 					padding: 8px 15px
@@ -102,6 +113,14 @@
 					display: none
 				&__content
 					width: 100%
+					height: 100%
+					justify-content: space-around
+				&__title
+					margin: 0
+					padding: 0
+					line-height: auto
+				svg
+					display: none
 
 
 @media screen and (max-width: 540px)
@@ -109,7 +128,9 @@
 		section.content
 			.item
 				width: 100%
+				max-width: 100%
 				height: 80px
+				min-height: 80px
 				flex-direction: row
 				justify-content: space-between
 
@@ -127,7 +148,7 @@
 				&__content
 					flex-direction: row
 				svg
-					height: 25px
+					display: none !important
 				.icon-wrapper
 					padding: 2px 5px
 					width: auto

@@ -3,19 +3,25 @@
 		{
 			"name": "Skydelve",
 			"image": "skydelve.png",
-			"images": ["skydelve.png", "skydelve.png"],
-			"tech": "React, Redux, RESTful API",
+			"images": ["skydelve.png", "skydelve-2.jpg"],
+			"tech": "React, Redux, REST, Bootstrap 4",
 			"link": "https://rafalskwara.github.io/skydelve/",
 			"desc": {
 				"en": [
-					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
-					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
-					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+					"The NASA's API is great and I wanted to show off some of its features while consolidating my new React skills. I also wanted to really understand React CSS Transitions so I used them a bit on this project.",
+					"The app features four functionalities powered by NASA API.",
+					"The user can check what was the Astronomy picture of the day for any chosen date and read some interesting explanation provided by NASA.",
+					"Another part of the app shows pictures of Earth on a given date, both natural and enhanced (there's a toggle switch to choose between them). Once the picture is displayed the user can 'rotate' the Earth to see it from a different angle.",
+					"Third part shows data of asteroids which are at their nerest approach to Earth on any chosen date and in a week that follows it. The details include diameter or relative speed of the asteroid.",
+					"Part four was built to showcase photographs taken by NASA Mars rovers. The app checks for available dates (measured by Martiian sol) for any chosen camera on chosen rover and displays all of the pictures available. The pictures can be browsed by clicking the buttons or by swiping on touch devices."
 				],
 				"pl": [
-					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
-					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
-					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+					"Otwarte API NASA zainspirowało mnie do stworzenia tej aplikacji przeglądarkowej. Jej zbudowanie pomogło mi ugruntować wiedzę z zakresu React.js i CSS Transitions.",
+					"W aplikacji zawarłem cztery podstawowe funkcjonalności.",
+					"Użytkownik może zobaczyć Astronomiczne Zdjęcie Dnia dla dowolnej wybranej daty oraz przeczytać ciekawe informacje na jego temat pochodzące od NASA.",
+					"Kolejna część aplikacji pozwala na przeglądanie zdjęć satelitarnych Ziemi w trybie naturalnym i poprawionym graficznie (tryby można zmieniać przełącznikiem). Po wyświetleniu zdjęcia, można je 'obracać', by obejrzeć Ziemię z innego kąta.",
+					"NEO pozwala na zdobycie podstawowych informacji na temat asteroid, które danego dnia i w tygodniu po nim następującym są w swoim największym zbliżeniu do Ziemi. Informacje te to np. średnica czy prędkość.",
+					"Ostatnia funkcjonalność to przeglądarka zdjęć z łazików marsjańskich. Zdjecia są sortowane po sol (dobie marsjańskiej od wylądowania) oraz po rodzajach kamer. Zdjęcia można przewijać przciskami lub dotykowo (swipe)."
 				]
 			}
 			
@@ -23,23 +29,28 @@
 		},
 		{
 			"name": "Media Market",
-			"image": "storefront.png",
+			"image": "storefront.jpg",
 			"images": [
-				"storefront.png",
-				"storefront.png"
+				"storefront.jpg",
+				"storefront-2.jpg"
 			],
 			"tech": "React, Redux, SASS",
 			"link": "https://rafalskwara.github.io/storefront/",
 			"desc": {
 				"en": [
-					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
-					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
-					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+					"The idea behind the project was to build a prototype for an imaginary online store with some back end functionality simulated. I chose to move necessary logic to Redux so that reducers could be used by components for required calculations and storing and manipulating data.",
+					"There was no need to setting up an Express server since I didn 't want to overcomplicate the project so I created a JSON file to simulate data which normally would be provided by back end",
+					"The store populates product containers with products based on data it gets from JSON. It features a functioning search field, dynamically rendered product pages, special offer section with countdown component and working mechanism for adding products to cart, wishlist and compare page.",
+					"Apart from this all, there is a possibility of changing the language and currency displayed thorughout the site.",
+					"The site is responsible, although some minor bugs may still be present."
+
 				],
 				"pl": [
-					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
-					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
-					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+					"Ten projekt to prototyp nieistniejącego sklepu internetowego wraz z pewnymi działającymi funkcjami, normalnie obsługiwanymi przez backend. Za zarządanie i manipulację danymi odpowiada Redux.",
+					"By uniknąć przesadnego skomplikowania projektu, uniknąłem stawiania serwera na Express, a całość danych umieściłem w pliku JSON.",
+					"Sklep zapełnia kontenery produktami w opraciu o dane z pliku JSON. Posiada działającą wyszukiwarkę produktów, dynamicznie renderowane strony produktowe, sekcję 'Oferta specjalne' z licznikiem czasu do jej wygaśnięcia oraz działający mechanizm dodawania produktów do koszyka, ulubionych czy porównania.",
+					"Ponadto istnieje możliwość zmiany języka i waluty, która działa na całej stronie",
+					"Strona jest responsywna, małe bugi ciągle są jeszcze eliminowane."
 				]
 			}
 			
@@ -47,23 +58,27 @@
 		},
 		{
 			"name": "SpaceX Launch List",
-			"image": "spacex.png",
+			"image": "spacex.jpg",
 			"images": [
-				"spacex.png",
-				"spacex.png"
+				"spacex.jpg",
+				"spacex-2.jpg"
 			],
 			"tech": "React, Redux, RESTful API",
 			"link": "https://rafalskwara.github.io/spacex/",
 			"desc": {
 				"en": [
-					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
-					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
-					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+					"My first encounter with React. My goal was to find out how apps are built with this framework and to understand basic rules and concepts behind React.",
+					"Important part of creating the project was introducing external API requests -- I chose axios for this. After this had been done, I managed to make React deal with the data and display it in readable manner.Adding Redux was the latest improvement.",
+					"The app connects to SpaceX API and downloads data for all their rocket launches. Then they are displayed chronologically with basic data. The results can be filtered to show only launches of particular rocket type.",
+					"Clicking on an item renders a component which displays details about the launch including counter which counts down time remaining to launch if the launch is yet to take place.",
+					"RWD still remains to be implemented."
 				],
 				"pl": [
-					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
-					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
-					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+					"Mój pierwszy projekt na React.js. Służył zrozumieniu podstawowych zasad działania tego frameworka oraz zasad budowania aplikacji.",
+					"Chciałem też poznać sposoby na łączenie się React z zewnętrznymi API i zdecydowałem się na axios. Aplikacja przetwarza dane i wyświetla je w czytelny sposób, także dzięki późniejszemu dodaniu Redux.",
+					"Aplikacja łączy się z API SpaceX i pobiera dane dotyczące wszystkich startów rakiet. Podstawowe dane wyświetlane są potem chronologicznie. Wyniki mogą być filtrowane tak, by pokazywać tylko starty konkretnego typu rakiety.",
+					"Kliknięcie na konkretny start powoduje wyrenderowanie komponentu ze szczegółami na temat danego startu, w tym licznik odmierzający czas, jeśli start jest dopiero planowany.",
+					"RWD nie jest jeszcze zaimplementowane."
 				]
 			}
 			
@@ -74,20 +89,20 @@
 			"image": "duel.png",
 			"images": [
 				"duel.png",
-				"duel.png"
+				"duel-2.jpg"
 			],
 			"tech": "HTML5, CSS3, JS (ES6)",
 			"link": "https://codepen.io/rafalskwara/full/aVBJxz/",
 			"desc": {
 				"en": [
-					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
-					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
-					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+					"While learning about ES6 classes in JS I thought about making something that would help get familiar with how they work in practice. I chose to make a simple RPG game.",
+					"The game is quite simple but it didn't feel that way when I was working on it. No AI is involved so it's best for two players.",
+					"The players pick one of the heroes, all of which have their attributes, weapons, shields etc. Then each player takes her turn to attack and algorithms calculate damage that these attacks inflict."
 				],
 				"pl": [
-					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
-					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
-					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+					"Projekt, który powstał, gdyż chciałem wypróbować działanie klas ES6 w praktyce. Wybrałem stworzenie małej gry RPG.",
+					"Gra jest dość prosta, prostsza niż się wydawało, kiedy ją pisałem. Nie ma żadnego AI, więc sprawdza sę przy rozgrywce dla dwóch graczy.",
+					"Gracze wybierają swoje postacie, z których każda ma swoje atrybuty, bronie, tarcze itp. Każdy gracz ma swoją turę na wykonanie ataku, a algorytmy obliczają zadane obrażenia, które ten atak zadaje."
 				]
 			}
 			
@@ -95,23 +110,25 @@
 		},
 		{
 			"name": "Sarbat - static page",
-			"image": "sarbat.png",
+			"image": "sarbat.jpg",
 			"images": [
-				"sarbat.png",
-				"sarbat.png"
+				"sarbat.jpg",
+				"sarbat-2.jpg"
 			],
 			"tech": "HTML5, CSS3, JS (ES6)",
 			"link": "https://rafalskwara.github.io/sarbat/",
 			"desc": {
 				"en": [
-					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
-					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
-					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+					"It was going to be a simple recreation of a free design I found in the Web. It's as simple as can be. No preprocessors, frameworks, automation scripts.",
+					"Pure HTML, CSS and JS. OK, a few JS libraries came in handy. It did show me how important all the front end tools are. I missed Gulp, Sass and Pug but, overall, I'm happy with the result.",
+					"It's a responsive landing page for a creative agency. That's what this project is. All flexbox based, the layout is smooth yet simple.",
+					"The website has some essentials like mobile navigation, form, slideshow, and some fun CSS transitions, too."
 				],
 				"pl": [
-					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
-					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
-					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+					"Próba powrotu do korzeni i stworzenia strony w najprostszy z możliwych sposobów. Żadnych preprocesorów, frameworków czy skryptów automatyzujących.",
+					"Ta strona to czysty HTML, CSS i JavaScript z kilkoma małymi bibliotekami. Jej tworzenie uświadomiło mi wagę nowoczesnych narzędzi deweloperskich. Brakowało mi Gulpa, Sass czy Pug, ale rezultat jest mimo wszystko zadowalający.",
+					"Jest to responsywna statyczna strona typu landing page dla nieistniejącej agencji interaktywnej. Layout bazuje na flexbox, jest płynny ale prosty.",
+					"Strona posiada kilka podstawowych funkcjonalności, jak nawigacja mobilna, formularz, pokaz slajdów i kilka ciekawych przejść (transitions) CSS."
 				]
 			}
 			
@@ -119,23 +136,25 @@
 		},
 		{
 			"name": "Weather widget",
-			"image": "weather.png",
+			"image": "weather.jpg",
 			"images": [
-				"weather.png",
-				"weather.png"
+				"weather.jpg",
+				"weather-2.jpg"
 			],
 			"tech": "JS, jQuery, RESTful API",
 			"link": "https://codepen.io/rafalskwara/full/RKzWZG/",
 			"desc": {
 				"en": [
-					"Lorem ipsum dolor sit amet, vix quod affert vocent at, doctus accusamus ei ius. At sit nusquam laboramus, ad etiam iisque sadipscing ius.",
-					"Insolens voluptaria consequuntur ex pro, cum te diam definitiones. Nec inermis evertitur reformidans ut, ludus antiopam ne nec. Ut nam odio dolores principes, porro eligendi sadipscing et qui, dicant graece neglegentur ut usu.",
-					"Sea quodsi ceteros dolores ea, nec zril nominavi et."
+					"A project made for FreeCodeCamp's course. A bit outdated, since it uses jQuery to get data from APIs but a relevant insight into my first time with handling REST data.",
+					"This widget starts by localizing the user with IPInfo API, which turned out to be more reliable than browser's geolocalisation feature, especially if you want to use Codepen.",
+					"After this the localisation data is handled and used to retrieve weather info from Apixu open API. The data is then displayed together with an icon symbolising weather conditions.",
+					"There is also possibility to change temperature units from Celsius to Fahrenheit with one click."
 				],
 				"pl": [
-					"Sit agam iuvaret urbanitas no, eu omnis labitur saperet vix.",
-					"Eum no fugit ludus noluisse, officiis delicatissimi at cum, epicurei consectetuer ei mea.",
-					"Mel dico duis inermis id. Et usu aeque commodo. Ne probo legere dicunt his."
+					"Projekt na potrzeby kursu FreeCodeCamp. Troszkę przestarzały, jako że do łączenia się z API używa jQuery. Jest to jednak moje pierwsze doświadczenie z REST API.",
+					"Widget lokalizuje użytkownika dzięki IPInfo API, co jest obejściem problemu geolokalizacji przez przeglądarkę w projektach umieszczonych na Codepen.",
+					"Dane lokalizacji przekazywane są do otwartego API Apixu, który zwraca informacje pogodowe. Te z kolei wyświetlane są przez widget wraz z ikoną symbolizującą warunki pogodowe.",
+					"Widget ma funkcję zmiany jednostek temperatury z Celsjusza na Fahrenheity."
 				]
 			}
 			

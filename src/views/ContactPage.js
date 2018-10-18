@@ -7,7 +7,7 @@ import "../view_styles/ContactPage.sass";
 import Header from '../components/Header/Header'
 import { hideMenu, toggleMenu } from '../actions/actions'
 import Icon from 'react-icons-kit'
-import { socialGithub, socialLinkedin, iosEmail, iphone } from 'react-icons-kit/ionicons'
+import { socialGithub, socialLinkedin, iosEmail, iphone, documentText } from 'react-icons-kit/ionicons'
 const mapStateToProps = state => ({
 	menuHidden: state.firstReducer.menuHidden,
 	lang: state.firstReducer.lang
@@ -75,10 +75,9 @@ class ContactPage extends React.Component {
 						<div className="item__text">+48 695 729 757</div>
 					</a>
 					<a href={this.props.lang==="en" ? CV_ENG : CV_PL} className="item item-cv" download>
-						<Icon icon={ iphone } size={70}/>
+						<Icon icon={ documentText } size={70}/>
 						<div className="item__text">{this.props.lang === "en" ? "Download my CV" : "Pobierz moje CV"}</div>
 					</a>
-
 				</section>
 			</div>
 

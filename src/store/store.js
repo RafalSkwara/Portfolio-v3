@@ -8,7 +8,7 @@ import { routerMiddleware } from "react-router-redux";
 
 import rootReducer from "../reducers/rootReducer";
 const history = createHistory();
-const middleware = applyMiddleware(promise(), routerMiddleware(history), thunk, createLogger() );
+const middleware = applyMiddleware(promise(), routerMiddleware(history), thunk);
 
 const store = createStore(rootReducer, {} ,middleware);
 

@@ -43,7 +43,7 @@ class App extends React.Component {
 		const plFlag = require("./assets/img/pl-flag.png");
 		const ukFlag = require("./assets/img/uk-flag.png");
 		return (
-			<Router basename={"/new-portfolio"} > 
+			<Router basename={"/"} > 
 			{/* change the string in basename to "/" for development */}
 				<div className="main-wrapper" style={{
 					// backgroundImage: `url(${bg})`,
