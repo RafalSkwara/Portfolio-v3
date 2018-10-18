@@ -100,7 +100,7 @@
 					"The players pick one of the heroes, all of which have their attributes, weapons, shields etc. Then each player takes her turn to attack and algorithms calculate damage that these attacks inflict."
 				],
 				"pl": [
-					"Projekt, który powstał, gdyż chciałem wypróbować działanie klas ES6 w praktyce. Wybrałem stworzenie małej gry RPG.",
+					"Projekt, który powstał, kiedy chciałem wypróbować działanie klas ES6 w praktyce. Wybrałem stworzenie małej gry RPG.",
 					"Gra jest dość prosta, prostsza niż się wydawało, kiedy ją pisałem. Nie ma żadnego AI, więc sprawdza sę przy rozgrywce dla dwóch graczy.",
 					"Gracze wybierają swoje postacie, z których każda ma swoje atrybuty, bronie, tarcze itp. Każdy gracz ma swoją turę na wykonanie ataku, a algorytmy obliczają zadane obrażenia, które ten atak zadaje."
 				]
@@ -154,7 +154,7 @@
 					"Projekt na potrzeby kursu FreeCodeCamp. Troszkę przestarzały, jako że do łączenia się z API używa jQuery. Jest to jednak moje pierwsze doświadczenie z REST API.",
 					"Widget lokalizuje użytkownika dzięki IPInfo API, co jest obejściem problemu geolokalizacji przez przeglądarkę w projektach umieszczonych na Codepen.",
 					"Dane lokalizacji przekazywane są do otwartego API Apixu, który zwraca informacje pogodowe. Te z kolei wyświetlane są przez widget wraz z ikoną symbolizującą warunki pogodowe.",
-					"Widget ma funkcję zmiany jednostek temperatury z Celsjusza na Fahrenheity."
+					"Widget ma funkcję zmiany jednostek temperatury ze skali Celsjusza na Fahrenheita."
 				]
 			}
 			
